@@ -1,0 +1,391 @@
+@font-face {
+font-family: 'Bebas Neue Regular';
+font-style: normal;
+font-weight: normal;
+src: url('../fonts/BebasNeue Regular.otf') format('opentype');
+}
+
+@font-face {font-family:"Apparatus SIL";src:url("../fonts/AppSILR.eot?") format("eot"),url("../fonts/AppSILR.woff")
+ format("woff"),url("../fonts/AppSILR.ttf") format("truetype"),url("../fonts/AppSILR.svg#ApparatusSIL")
+ format("svg");font-weight:normal;font-style:normal;}
+
+ @font-face {font-family:"Apparatus SIL Italic";
+src:url("../fonts/AppSILI.eot?") format("eot"),url("../fonts/AppSILI.woff") format("woff"),url("../fonts/AppSILI.ttf") format("truetype"),
+url("../fonts/AppSILI.svg#ApparatusSILItalic") format("svg");
+font-weight:normal;font-style:normal;}
+
+@font-face {font-family:"Apparatus SIL Italic";
+src:url("../fonts/AppSILI.eot?") format("eot"),url("../fonts/AppSILI.woff") format("woff"),url("../fonts/AppSILI.ttf") format("truetype"),
+url("../fonts/AppSILI.svg#ApparatusSILItalic") format("svg");
+font-weight:normal;font-style:normal;}
+
+@font-face {font-family:"Dulcelin";
+src:url("../fonts/Dulcelin.eot?") format("eot"),url("../fonts/Dulcelin.woff") format("woff"),url("../fonts/Dulcelin.ttf") format("truetype"),
+url("../fonts/Dulcelin.svg#Dulcelin") format("svg");
+font-weight:normal;font-style:normal;}]
+
+/* global */
+
+div[class^='containercolor']{
+   width: 70%;
+   margin: 0 auto;
+}
+
+div[class^='containercolor']:after{
+    content: "";
+	display: table;
+	clear: both;
+}
+
+div[class^='containerv']{
+   width: 70%;
+   margin: 0 auto;
+}
+
+div[class^='containerv']:after{
+    content: "";
+	display: table;
+	clear: both;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	background: #f2f2f2;
+}
+
+a{text-decoration: none;}
+
+label {color: #b2b2b2; margin-left:17px; display: inline-block; width: 13%; }
+label:last-of-type{ float:left; }
+
+/* start */
+.brand{
+	font-family: "Dulcelin";
+	font-size: 24pt;
+	color:#6b6b6b;
+	display: inline-block;
+}
+
+header{
+	width: 70%;
+	margin: 0 auto;
+}
+
+header ul{
+	list-style: none;
+	margin: 0;
+	padding:0;
+	background: linear-gradient(to bottom, rgba(94,94,94,1) 0%,rgba(72,72,72,1) 100%);
+	overflow: hidden;
+}
+
+header ul li {
+	float: left;
+}
+
+header ul li a{
+	display: block;
+	font-family: "Bebas Neue Regular";
+	color: #e6e6e6;
+	font-size: 15pt;
+	padding: 15px 20px 15px 20px;
+	border-right: 1px solid #2f2f2f;
+	box-shadow: 1px 0px #6e6e6e;
+	transition: 0.6s ease;
+}
+
+header ul li:nth-child(7), header ul li:nth-child(6), header ul li:last-child{
+	float: right;
+	
+}
+
+header ul li a:hover{background: #464646;}
+
+header p{
+ 	font-family: "Apparatus SIL Italic";
+ 	color: #767676;
+ 	font-size: 16pt;
+ 	line-height: 35px;
+}
+
+header h1{margin-top: 0; padding-top: 40px;}
+
+header h2{font-family: "Bebas Neue Regular"; color:#666666; font-size: 36pt;}
+
+.filter{
+	margin-bottom: 20px;
+	font-family: "Bebas Neue Regular";
+	color: #5d5d5d;
+	font-size: 14pt;
+	border: 1px dashed #c2c2c2;
+ 	border-width: 1px 0px 1px 0;
+}
+
+.containerv img{
+	width: 22%;
+	margin-right: 3.6%;
+	border-radius: 2%;
+	margin-bottom: 3.7%;
+}
+
+.containerv img:nth-child(4n){
+	margin-right: 0%;
+}
+
+.containerv{text-align: center;}
+
+.containercolor2{ background: #333333 }
+
+.content{
+	width:48%;
+	float:left;
+}
+
+.content:first-of-type{
+	margin-right: 4%;
+}
+
+.column{
+	background-color: #2a2a2a;
+	margin: 35px 0px 35px 0px;
+	padding-bottom: 15px;
+}
+
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column h1 , .column h2, .column:last-of-type a{
+	background: linear-gradient(to bottom, rgba(97,141,124,1) 0%,rgba(73,115,99,1) 100%);
+	padding: 10px 0px 10px 17px;
+	font-size: 18pt;
+	font-family: "Bebas Neue Regular";
+	font-weight: lighter;
+	color: #e6e6e6;
+	text-shadow: 2px 2px  rgba(2,2,2, 0.4);
+}
+
+.column h2 , .column h3{background: none; font-size: 17pt; padding: 0px 17px; text-shadow: none;}
+
+.column p{
+	font-family: "Apparatus SIL";
+	color: #b2b2b2;
+	font-size: 12pt;
+	padding: 0px 17px;
+	line-height: 25px;
+	margin-bottom: 25px;
+}
+
+.column a, .column button{
+	font-family: "Apparatus SIL Italic";
+	font-size: 12pt;
+	background: linear-gradient(to bottom, rgba(97,141,124,1) 0%,rgba(73,115,99,1) 100%);
+	padding: 10px 35px 10px 35px;
+	border-radius: 5px;
+	color: white;
+	margin-left: 17px;
+	border: none;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.column a:hover, .column button:hover{
+	background: linear-gradient(to bottom, rgba(90,130,114,1) 0%,rgba(53,100,90,1) 100%);
+}
+
+.column:last-of-type a{
+	padding: 0px;
+	background: none;
+	margin-left: 0px;
+}
+
+.column button{margin-left: 115px;}
+
+.column button:last-of-type{}
+
+.column input, .column textarea{
+	width: 76%;
+	background: #1f1f1f; color: white; border: none; padding: 10px; margin-left: 15px;
+	margin-bottom: 15px;
+	font-family: "Arial";
+	font-size: 11pt;
+	color: #b2b2b2;
+	resize: none;
+}
+
+.column textarea{ height: 200px; }
+
+.column img { 
+	width: 85px; 
+	border-radius: 5%;
+	margin: 0px 25px 0px 17px;
+	float: left;
+}
+
+.firstcharacter{
+  float: left;
+  font-family: Georgia;
+  font-size: 75px;
+  line-height: 60px;
+  padding: 4px 8px 0px 3px;}
+
+.purple h1 , .purple  button {
+	background: linear-gradient(to bottom, rgba(123,96,120,1) 0%,rgba(107,84,122,1) 100%);
+}
+
+.purple button:hover{ background: linear-gradient(to bottom, rgba(113,86,110,1) 0%,rgba(97,74,112,1) 100%);  }
+
+.blue button:hover{ background: linear-gradient(to bottom, rgba(78,100,130,1) 0%,rgba(51,70,98,1) 100%);  }
+
+.blue h1, .blue button{
+	background: linear-gradient(to bottom, rgba(88,109,140,1) 0%,rgba(61,79,108,1) 100%);
+}
+
+.red h1{
+	background: linear-gradient(to bottom, rgba(163,87,87,1) 0%,rgba(140,75,75,1) 100%);
+}
+
+.last p:last-of-type{margin-bottom: 0px;}
+
+.italic p{font-family: "Apparatus SIL Italic";}
+
+.row{width: 100%; margin-bottom: 40px;}
+
+.containerv3{ padding-bottom: 5px; }
+
+.containerv3 p{ margin-top: 20px; font-size: 9pt; font-family: "Apparatus SIL" ; color: #737373; float:left;}
+
+.containerv3 i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.background-arrow{
+	margin-top: 10px;
+	background: #4e4e4e;
+	float: right;
+	padding: 5px 15px;
+	display: block;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*slideshow*/
+
+.slidecontainer{ margin: 0 auto; width: 70%; position: relative; margin-bottom: 20px;}
+
+.right, .left {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.right {
+     right: 0;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.2s;
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*services page*/
+
+.columnservice
+{
+	padding: 40px 0px 70px 0px;
+	width: 20%;
+	float: left;
+	margin-right: 6.66%;
+	color: #676767;
+}
+
+.columnservice:nth-child(4n){
+	margin-right: 0;
+}
+
+.columnservice h1{
+	text-align: center;
+	font-family: "Bebas Neue Regular";
+	font-size: 28pt;
+}
+
+.columnservice p{font-family: "Apparatus SIL"; color: #676767; line-height: 22.5px; font-size: 10pt; text-align: center;}
+
+.columnservice img
+{
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+
+/*login register, profile */
+
+.content > img{width: 250px; margin-top: 35px; }
+
+input[type="radio"]{
+		width: 5px;
+}
+
+label[type="gender"]{
+	width: 5px;
+	margin-left: 5px;
+}
+
+/* services edit*/
+.centerr { text-align: center; }
+
+.centerr button {margin-left: 0;}
+
+.centerr button:first-child{ margin-left: 45px;}
+
+select{
+	color: #b2b2b2;
+	outline: none;
+	border: none;
+	margin-top: 35px; 
+	font-size: 16pt;
+	background-color: transparent; 
+}
+
+select option:checked {
+  background: #1f1f1f linear-gradient(0deg, #1f1f1f 0%, #1f1f1f 100%);
+}
+
+.containervimg img{
+	width: 200px;
+	margin-top: 35px;
+}
+
+textarea[type=crud] {
+    height: 50px;
+}
+
+
